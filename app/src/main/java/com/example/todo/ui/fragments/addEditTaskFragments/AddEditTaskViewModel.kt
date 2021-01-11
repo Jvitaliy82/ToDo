@@ -1,4 +1,4 @@
-package com.example.todo.viewModels
+package com.example.todo.ui.fragments.addEditTaskFragments
 
 import androidx.hilt.Assisted
 import androidx.hilt.lifecycle.ViewModelInject

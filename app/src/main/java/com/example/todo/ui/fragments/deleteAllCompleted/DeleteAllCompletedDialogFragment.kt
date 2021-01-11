@@ -1,4 +1,4 @@
-package com.example.todo.ui.deleteAllCompleted
+package com.example.todo.ui.fragments.deleteAllCompleted
 
 import android.app.Dialog
 import android.os.Bundle

@@ -1,4 +1,4 @@
-package com.example.todo.ui.deleteAllCompleted
+package com.example.todo.ui.fragments.deleteAllCompleted
 
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.ViewModel

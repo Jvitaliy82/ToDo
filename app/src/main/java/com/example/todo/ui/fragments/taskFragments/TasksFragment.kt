@@ -1,4 +1,4 @@
-package com.example.todo.ui.fragments
+package com.example.todo.ui.fragments.taskFragments
 
 import android.os.Bundle
 import android.view.Menu
@@ -21,7 +21,6 @@ import com.example.todo.data.Task
 import com.example.todo.databinding.FragmentTasksBinding
 import com.example.todo.util.exhaustive
 import com.example.todo.util.onQueryTextChanged
-import com.example.todo.viewModels.TaskViewModel
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
@@ -88,20 +87,27 @@ class TasksFragment : Fragment(R.layout.fragment_tasks), TaskAdapter.OnItemClick
                             }.show()
                     }
                     is TaskViewModel.TaskEvent.NavigateToAddTaskScreen -> {
-                        val action = TasksFragmentDirections
-                            .actionTasksFragmentToAddEditTaskFragment(null, "New task")
+                        val action =
+                            TasksFragmentDirections.actionTasksFragmentToAddEditTaskFragment(
+                                null,
+                                "New task"
+                            )
                         findNavController().navigate(action)
                     }
                     is TaskViewModel.TaskEvent.NavigateToEditTaskScreen -> {
-                        val action = TasksFragmentDirections
-                            .actionTasksFragmentToAddEditTaskFragment(event.task, "Edit task")
+                        val action =
+                            TasksFragmentDirections.actionTasksFragmentToAddEditTaskFragment(
+                                event.task,
+                                "Edit task"
+                            )
                         findNavController().navigate(action)
                     }
                     is TaskViewModel.TaskEvent.ShowTaskSavedConfirmationMessage -> {
                         Snackbar.make(requireView(), event.msg, Snackbar.LENGTH_LONG).show()
                     }
                     TaskViewModel.TaskEvent.NavigateToDeleteAllCompletedScreen -> {
-                        val action = TasksFragmentDirections.actionGlobalDeleteAllCompletedDialogFragment()
+                        val action =
+                            TasksFragmentDirections.actionGlobalDeleteAllCompletedDialogFragment()
                         findNavController().navigate(action)
                     }
                 }.exhaustive
