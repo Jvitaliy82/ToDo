@@ -1,9 +1,17 @@
 <resources>
     <string name="app_name">ToDo</string>
+    <string name="tasks">Tasks</string>
     <string name="search">search</string>
     <string name="sort">Sort</string>
     <string name="sorted_by_name">Sorted by name</string>
     <string name="sort_by_date_created">Sort by date created</string>
     <string name="hide_completed">hide completed</string>
     <string name="delete_all_completed">Delete all completed</string>
+    <string name="task_deleted">Task deleted</string>
+    <string name="undo">UNDO</string>
+    <string name="new_task">New task</string>
+    <string name="edit_task">Edit task</string>
+    <string name="task_name">task name</string>
+    <string name="important_task">Important task</string>
+    <string name="created">Created:</string>
 </resources>

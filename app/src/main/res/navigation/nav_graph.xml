@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/tasksFragment"
         android:name="com.example.todo.ui.fragments.taskFragments.TasksFragment"
-        android:label="Tasks"
-        tools:layout="@layout/fragment_tasks" >
+        android:label="@string/tasks"
+        tools:layout="@layout/fragment_tasks">
         <action
             android:id="@+id/action_tasksFragment_to_addEditTaskFragment"
             app:destination="@id/addEditTaskFragment" />

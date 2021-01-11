@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ToDo</string>
+    <string name="tasks">Задачи</string>
+    <string name="search">поиск</string>
+    <string name="sort">Сортировка</string>
+    <string name="sorted_by_name">сорт. по имени</string>
+    <string name="sort_by_date_created">сорт. по дате</string>
+    <string name="hide_completed">скрыть выполненные</string>
+    <string name="delete_all_completed">удалить выполненные</string>
+    <string name="task_deleted">Задача удалена</string>
+    <string name="undo">ОТМЕНИТЬ</string>
+    <string name="new_task">Новая задача</string>
+    <string name="edit_task">Редактировать задачу</string>
+    <string name="task_name">имя задачи</string>
+    <string name="important_task">Важная задача</string>
+    <string name="created">Созданно:</string>
+</resources>
